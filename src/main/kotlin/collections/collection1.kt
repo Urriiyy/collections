@@ -3,7 +3,7 @@
 //
 
 fun main() {
-    val collection: ArrayList<String> = arrayListOf() // создание пустой коллекции
+    val collection: ArrayList<Char> = arrayListOf() // создание пустой коллекции
 
     println("\nВведите количество элементов списка\n")
 
@@ -12,10 +12,10 @@ fun main() {
         println("\nСписок не содержит элементов\n")
     } else {
         var collectSise = enter!!.toInt() // размер коллекции
-        for (k in 1..collectSise) { // зааполнение коллекции
-            collection.add("thing ${k}")
+        for (k in 1..collectSise) { // зааполнение коллекции символами из цыфр
+            collection.add(k.toString()[0])
         }
-
+        
         println("\nКолличество элементов в списке ${collectSise} \n")
 
         for (el in collection) { // выввод элементов коллекции
